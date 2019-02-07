@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    display: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.key {
+    border: solid black;
+    height: 20vh;
+    margin: 0.3rem auto;
+    padding: 0.5rem;
+    width: 32%;
+}
