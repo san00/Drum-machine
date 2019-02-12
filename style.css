@@ -13,8 +13,12 @@ html {
 *:before {
     box-sizing: inherit;
 }
+.title {
+    background: grey;
+    text-align: center;
+}
 
-.keys {
+.keypads {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -23,8 +27,16 @@ html {
 
 .key {
     border: solid black;
-    height: 20vh;
+    height: 25vh;
     margin: 0.3rem auto;
     padding: 0.5rem;
+    transition: all 0.07s;
     width: 32%;
 }
+
+.playing {
+    border: solid gold;
+    transform: scale(1.1);
+}
+
+
