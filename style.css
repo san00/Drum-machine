@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
 }
 
 * {
@@ -27,7 +28,7 @@ html {
 
 .key {
     border: solid black;
-    height: 25vh;
+    height: 20vh;
     margin: 0.3rem auto;
     padding: 0.5rem;
     transition: all 0.07s;
@@ -39,4 +40,16 @@ html {
     transform: scale(1.1);
 }
 
-
+@supports (display: grid) {
+    html{
+        display: grid;
+    }
+    .keypads {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .key {
+        margin: 0.5rem;
+        width: 30vw;
+    }
+}
