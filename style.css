@@ -1,6 +1,8 @@
 html {
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
+    margin-top: 3rem;
 }
 
 * {
@@ -13,8 +15,11 @@ html {
 *:before {
     box-sizing: inherit;
 }
+.title {
+    text-align: center;
+}
 
-.keys {
+.keypads {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -26,5 +31,36 @@ html {
     height: 20vh;
     margin: 0.3rem auto;
     padding: 0.5rem;
+    text-align: center;
+    transition: all 0.07s;
     width: 32%;
+}
+.sound {
+    font-size: 1.2rem;
+}
+
+.letter {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.playing {
+    border: solid gold;
+    transform: scale(1.1);
+}
+
+@supports (display: grid) {
+    html {
+        display: grid;
+    }
+    .keypads {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .key {
+        margin: 0.5rem;
+        width: 30vw;
+    }
 }
