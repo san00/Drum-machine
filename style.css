@@ -1,6 +1,7 @@
 html {
     background: beige;
     box-sizing: border-box;
+    font-family: "Lobster", cursive;
     padding-top: 3rem;
 }
 
@@ -15,6 +16,7 @@ html {
     box-sizing: inherit;
 }
 .title {
+    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -26,7 +28,9 @@ html {
 }
 
 .key {
-    border: 0.3rem solid black ;
+    background-color: bisque;
+    border-radius: 0.1rem;
+    box-shadow: 0.0625rem 0.125rem 0.125rem lightgray;
     height: 20vh;
     margin: 0.3rem auto;
     text-align: center;
@@ -55,6 +59,15 @@ html {
         grid-template-columns: repeat(3, 1fr);
     }
     .key {
-        width: calc(33vw - 1rem);
+        width: calc(32vw - 1rem);
+    }
+}
+
+@media screen and (min-width:46rem) {
+    .sound {
+        font-size: 1.5rem;
+    }
+    .letter {
+        margin-bottom: 1.5rem;
     }
 }
